@@ -1,0 +1,59 @@
+/* selector por clase en la etiqueta header del documento */
+.header{
+    /* color de fondo */
+    background-color: var(--main-color);
+    position: fixed;
+    /* ocupe tofo el ancho del viewport */
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+/* selector por clase en la etiqueta nav de las opciones del documento */
+.navegacion{
+    /* colocar las cajas como si fuera celdas de tablas */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* selector por clase logo */
+.logo{
+    /* colocar las cjas si fueran celdas de tablas */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* espacio entre elementos */
+    gap: spx;
+    /* color al texto */
+    color: var(--text-color);
+}
+/* selector por clase  */
+.menu{
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+}
+/* selector por clase  li del menu */
+.menu li{
+    /* separe  las opciones 10 px  */
+    padding: 0px 10px;
+}
+/* selector por clase personalizar el texto de las opciones */
+.menu a{
+    color: var(--text-color);
+    line-height: 50px;
+}
+/* medias query sirve para representar a nivel de pixeles la aplicacion 
+se adapte a un tamaño especifico */
+@media(max-width: 750px){
+    /* pagina(body)
+    bodu{
+        background-color: blue;
+    } */
+    .navegacion{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+}
